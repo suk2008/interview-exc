@@ -11,12 +11,31 @@ public class LinkedListC<T> {
         headNode = null;
     }
 
+    /**
+     *
+     * @param value
+     */
     public void addAtHead(int value){
         Node tempNode = new Node();
         tempNode.data = value;
 
+        // create temp Node, node.ext = > headMode
         tempNode.next = headNode;
         headNode = tempNode;
+        size++;
+    }
+
+    public void printAll(){
+        Node tempNode = headNode;
+        while(tempNode!=null){
+           System.out.println(tempNode.data);
+           tempNode = tempNode.next;;
+        }
+    }
+    public void isEmpty(){
+        if(size == 0){
+            System.out.println("List is empty");
+        }
     }
 
 

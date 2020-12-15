@@ -10,7 +10,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
 
         LinkedListC  list = new LinkedListC<>();
         list.addAtHead(1);
@@ -18,9 +17,6 @@ public class App
         list.addAtHead(4);
 
 
-        for(int i=0;i<list si){
-
-        }
-
+        list.printAll();
     }
 }
